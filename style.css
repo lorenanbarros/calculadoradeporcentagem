@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+    
+    
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: blue;
+    }
+
+h1{
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 25%;
+  
+}
+
+div.container{
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
+}
+
+div.container{
+    font-size: 22px;
+    color: rgb(60,60,60);
+}
+
+div.container form{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+div.container form input{
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(80,80,80);
+    max-width: 100px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(150,150,150);
+    outline: 0;
+    transition: border 0.5s;
+}
+
+div.container form input:hover,
+div.container form input:focus,
+div.container form input:valid{
+    border: 1px solid blue;
+}
+
+div.container form 
+input::-webkit-inner-spin-button{
+    display: none;
+}
+
+div.container div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div.container div button{
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.container div span{
+    margin-left: 15px;
+}
+
+
+@media screen and (max-width: 764px){
+
+    div.container{
+        width: 100%;
+        border-radius: 0;
+        font-size: 16px;
+    }
+
+    div.container form input{
+        font-size: 12px;
+        max-width: 60px;
+    }
+
+    div.container div button{
+        font-size: 12px;
+    }
+}
